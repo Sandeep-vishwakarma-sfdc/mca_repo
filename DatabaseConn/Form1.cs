@@ -55,5 +55,25 @@ namespace DatabaseConn
             cmd.ExecuteNonQuery();
             MessageBox.Show("data inserted sucessfully");
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string nm, sem;
+            int roll;
+            nm = textBox1.Text;
+            roll = Convert.ToInt16(textBox2.Text);
+            sem = textBox3.Text;
+            cmd = new SqlCommand("update StudentInfo set name='" + nm + "',sem='" + sem + "' where roll='" + roll + "'", con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("data updated sucessfully");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int roll = Convert.ToInt16(textBox2.Text);
+            cmd = new SqlCommand("delete from  StudentInfo  where roll='" + roll + "'", con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("data deleted sucessfully");
+        }
     }
 }

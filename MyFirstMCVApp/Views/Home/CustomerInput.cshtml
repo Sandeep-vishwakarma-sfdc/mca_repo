@@ -1,0 +1,39 @@
+﻿@model MyFirstMCVApp.Models.Customer
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/main.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <title>CustomerInput</title>
+</head>
+<body>
+    @using (Html.BeginForm()) {
+        <div>
+            <h1>Customer Input</h1>
+            <table>
+                <tr>
+                    <td>Id</td>
+                    <td>@Html.TextAreaFor(x => x.CustId)</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>@Html.TextAreaFor(x => x.CustName)</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>@Html.TextAreaFor(x => x.CustAdd)</td>
+                </tr>
+                <input id="submit1" type="submit" />
+                @Html.ValidationSummary()
+            </table>
+        </div>
+    }
+    </body>
+</html>

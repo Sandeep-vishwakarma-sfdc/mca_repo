@@ -1,0 +1,22 @@
+﻿@model MyFirstMCVApp.Models.Customer
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>customerDisplay</title>
+</head>
+<body>
+    <div>
+        <h1>Customer Information System</h1>
+        <p>Customer Id : @Model.CustId</p>
+        <p>Customer Name : @Model.CustName</p>
+        <p>Customer Address : @Model.CustAdd</p>
+    </div>
+</body>
+</html>

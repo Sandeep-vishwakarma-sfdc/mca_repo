@@ -1,0 +1,28 @@
+﻿@model CustomerMVC_APP.Models.Customer
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CustomerDisplayed</title>
+</head>
+<body>
+    <div>
+        <h1>Customer Information System</h1>
+        <p>
+            Customer ID : @Model.CustID
+        </p>
+        <p>
+            Customer Name : @Model.CustName
+        </p>
+        <p>
+            Customer Address : @Model.CustAdd
+        </p>
+    </div>
+</body>
+</html>

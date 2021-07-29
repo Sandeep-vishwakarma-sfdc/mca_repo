@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site1.master.cs" Inherits="Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="wrapper">
+        <div class="menu">
+            <ul>
+                <li><a href="Default2.aspx">Home Page</a></li>
+                <li><a href="Default3.aspx">Category</a></li>
+                <li><a href="Default4.aspx">About Us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+        
+            <div class="footer">
+                <h3>@ abc.com</h3>
+            </div>
+    
+        
+    </div>
+    </form>
+</body>
+</html>
